@@ -1,4 +1,4 @@
-const canvas = document.getElementById("poto");
+const canvas = document.getElementById("WHAT");
 const ctx = canvas.getContext("2d");
 var CANVAS_WIDTH = canvas.width = window.innerWidth;
 var CANVAS_HEIGHT = canvas.height = window.innerHeight;
@@ -18,9 +18,8 @@ window.addEventListener("click", e =>{
 })
 function ani(){
   if(gameStarted){
-    ctx
   }else{
-    
+    ctx.fillRect(button.x, button.y, button.width, button.height);
   }
   requestAnimationFrame(ani);
 }
