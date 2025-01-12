@@ -9,7 +9,7 @@ var startButton = {
   width: 100,
   height: 100,
 }
-window.addEventListener("click", e =>{
+window.addEventListener('click', e =>{
   if (!gameStarted) {
     if (e.x > startButton.x && e.x < startButton.x + startButton.width && e.y > startButton.y && e.y < startButton.y + startButton.height) {
       gameStarted = true
