@@ -11,7 +11,7 @@ var startButton = {
 }
 window.addEventListener("click", e =>{
   if (!gameStarted) {
-    if (e.x > startButton.x && e.x < startButton.x + startButton.width && e.y > startButton.y && e.y < startButton.y + startButton.height) {
+    if (e.x > c.x && e.x < startButton.x + startButton.width && e.y > startButton.y && e.y < startButton.y + startButton.height) {
       gameStarted = true
     }
   }
@@ -19,7 +19,7 @@ window.addEventListener("click", e =>{
 function ani(){
   if(gameStarted){
   }else{
-    ctx.fillRect(button.x, button.y, button.width, button.height);
+    ctx.fillRect(startButton.x, startButton.y, startButton.width, startButton.height);
   }
   requestAnimationFrame(ani);
 }
