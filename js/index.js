@@ -11,7 +11,7 @@ var startButton = {
 }
 window.addEventListener("click", e =>{
   if (!gameStarted) {
-    if (e.x > c.x && e.x < startButton.x + startButton.width && e.y > startButton.y && e.y < startButton.y + startButton.height) {
+    if (e.x > startButton.x && e.x < startButton.x + startButton.width && e.y > startButton.y && e.y < startButton.y + startButton.height) {
       gameStarted = true
     }
   }
