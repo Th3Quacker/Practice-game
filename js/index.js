@@ -17,6 +17,7 @@ window.addEventListener('click', e =>{
   }
 })
 function ani(){
+  ctx.clearRect(0,0,CANVAS_WIDTH, CANVAS_HEIGHT);
   if(gameStarted){
   }else{
     ctx.fillRect(startButton.x, startButton.y, startButton.width, startButton.height);
